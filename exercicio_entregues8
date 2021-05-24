@@ -1,0 +1,14 @@
+info = dict()
+info['NOME'] = str(input('NOME: '))
+ano_nasc = int(input('ANO DE NASCIMENTO:'))
+info['IDADE'] = datetime.now().year - ano_nasc
+info['CTPS'] = int(input('NUMERO CARTEIRA DE TRABALHO: '))
+
+if info['CTPS'] != 0:
+    info['TEMPO DE SERVIÇO'] = int(input('TEMPO DE SERVIÇO: '))
+    info['SALARIO'] = int(input('SALÁRIO R$: '))
+    info['APOSENTADORIA'] = (35 - info['TEMPO DE SERVIÇO']) + info['IDADE']
+print(info)
+for k, v in info.items():
+    print(f' {k} : {v}')
+    sleep(1)
