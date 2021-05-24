@@ -1,0 +1,43 @@
+c = 0
+print('RESPONDA AS SEGUINTES PERGUNTAS: ')
+perguntas = ["Telefonou para a vítima?", "Esteve no local do crime?",
+             "Mora perto da vítima?", "Devia para a vítima?", "Já trabalhou com a vítima?"]
+print(perguntas[0])
+resposta1 = str(input('S/N: ')).upper().strip()[0]
+if resposta1 == 'S':
+    c += 1
+else:
+    print('Resposta inválida')
+print(perguntas[1])
+resposta2 = str(input('S/N: ')).upper().strip()[0]
+if resposta2 == 'S':
+    c += 1
+else:
+    print('Resposta inválida')
+print(perguntas[2])
+resposta3 = str(input('S/N: ')).upper().strip()[0]
+if resposta3 == 'S':
+    c += 1
+else:
+    print('Resposta inválida')
+print(perguntas[3])
+resposta4 = str(input('S/N: ')).upper().strip()[0]
+if resposta4 == 'S':
+    c += 1
+else:
+    print('Resposta inválida')
+print(perguntas[4])
+resposta5 = str(input('S/N: ')).upper().strip()[0]
+if resposta5 == 'S':
+    c += 1
+else:
+    print('Resposta inválida')
+
+if c == 2:
+    print("Suspeita")
+elif c == 3 or c == 4:
+    print("Cúmplice")
+elif c == 5:
+    print("Assassino")
+else:
+    print('Inocente')
