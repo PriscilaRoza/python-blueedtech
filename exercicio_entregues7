@@ -1,0 +1,14 @@
+lista = []
+print('DIGITE 7 VALORES 1 POR VEZ A SEGUIR: ')
+for f in range(0, 7):
+    lista.append(int(input('digite um número: ')))
+print(lista)
+impar = list()
+par = list()
+for g in lista:
+    if g % 2 != 0:
+        impar.append(g)
+    else:
+        par.append(g)
+print(
+    f'ESSES FORAM OS NÚMEROS PARES: {par} E ESSES FORAM OS NÚMEROS IMPARES: {impar}')
