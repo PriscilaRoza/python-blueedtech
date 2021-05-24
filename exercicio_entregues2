@@ -1,0 +1,11 @@
+quantasVogaisTinham = 0
+# para obrigar a deixar as letras em minúsculo
+frase = str(input('digite uma frase: ')).lower()
+for aeiou in frase:
+    if aeiou in 'aeiou':
+        frase = frase.replace(aeiou, ' ')  # replace para tirar as letras aeiou
+        quantasVogaisTinham = quantasVogaisTinham+1
+
+
+print(frase)
+print(f'NA FRASE ACIMA TINHAM {quantasVogaisTinham} VOGAIS')
