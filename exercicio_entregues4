@@ -1,0 +1,11 @@
+def mes_extenso():
+    mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+           'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+    dd = int(input('digite o dia DD/ : '))
+    mm = int(input('digite o mês /MM/ : '))
+    ano = int(input('digite o ano /AAAA: '))
+    print(f'VOCÊ DIGITOU A DATA: {dd}/{mm}/{ano}')
+    print(f'{dd} DE {mes[mm -1]}  {ano}')
+
+
+mes_extenso()
